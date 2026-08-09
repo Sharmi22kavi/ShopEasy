@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - ShopEasy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>🛒 ShopEasy</h2>
+    </div>
+
+    <div class="icons">
+
+        <button onclick="window.location='index.html'">
+            🏠 Home
+        </button>
+
+        <button onclick="window.location='cart.html'">
+            🛒 Cart
+        </button>
+
+    </div>
+
+</header>
+
+<div class="checkout-box">
+
+    <h2>Select Payment Method</h2>
+
+    <select id="paymentMethod">
+
+        <option value="">-- Select Payment Method --</option>
+
+        <option value="Cash on Delivery">
+            Cash on Delivery (COD)
+        </option>
+
+        <option value="UPI">
+            UPI (Google Pay / PhonePe / Paytm)
+        </option>
+
+        <option value="Credit Card">
+            Credit Card
+        </option>
+
+        <option value="Debit Card">
+            Debit Card
+        </option>
+
+        <option value="Net Banking">
+            Net Banking
+        </option>
+
+    </select>
+
+    <br><br>
+
+    <button onclick="placeOrder()">
+        ✅ Place Order
+    </button>
+
+</div>
+
+<footer>
+
+    <p>
+        © 2026 ShopEasy | Secure Payment
+    </p>
+
+</footer>
+
+</body>
+</html>

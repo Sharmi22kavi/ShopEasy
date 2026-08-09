@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+<div class="profile-box">
+
+<h1>👤 My Profile</h1>
+
+<div class="profile-info">
+
+    <h3>Name</h3>
+    <p id="profile-name"></p>
+
+    <h3>Email</h3>
+    <p id="profile-email"></p>
+
+</div>
+
+
+<button onclick="editProfile()">
+    Edit Name
+</button>
+
+<script>
+const user = JSON.parse(localStorage.getItem("currentUser"));
+
+if(user){
+    document.getElementById("profile-name").innerText = user.name;
+    document.getElementById("profile-email").innerText = user.email;
+}
+</script>
+
+
+
+
+
+</body>
+</html>
+
+

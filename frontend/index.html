@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping System</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>🛒 ShopEasy</h2>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search Products...">
+    </div>
+
+   <div class="icons">
+
+
+<button id="login-btn"
+    onclick="window.location='login.html'">
+    Login
+</button>
+
+<button id="register-btn"
+    onclick="window.location='register.html'">
+    Register
+</button>
+
+<div class="user-menu">
+
+    <button class="user-btn">
+        👤 <span id="user-name">User</span> ▼
+    </button>
+
+    <div class="dropdown">
+
+        <a href="orders.html">
+            My Orders
+        </a>
+
+       <a href="profile.html">
+    Profile
+</a>
+
+        <a href="#" onclick="logout()">
+            Logout
+        </a>
+
+    </div>
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<section class="banner">
+
+    <h1>Welcome to ShopEasy</h1>
+
+    <p>
+        Best Deals • Fast Delivery • Secure Payments
+    </p>
+
+</section>
+
+
+<section class="products" id="product-container">
+
+    <!-- Products loaded from JavaScript -->
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>🛒 ShopEasy</h2>
+    </div>
+
+    <div class="icons">
+
+        <button onclick="window.location='index.html'">
+            🏠 Home
+        </button>
+
+        <button onclick="window.location='orders.html'">
+            📦 Orders
+        </button>
+
+    </div>
+
+</header>
+
+<h1 style="text-align:center;margin-top:30px;">
+    🛒 My Shopping Cart
+</h1>
+
+<div class="cart-container">
+
+    <div id="cart-items">
+
+        <!-- Cart Items will appear here -->
+
+    </div>
+
+    <h2 style="text-align:right;">
+        Total :
+        <span id="total-price">₹0</span>
+    </h2>
+
+    <br>
+
+    <div style="display:flex;gap:15px;justify-content:flex-end;">
+
+        <button
+            onclick="clearCart()"
+            style="
+            background:red;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;">
+
+            Clear Cart
+
+        </button>
+
+        <button
+            onclick="checkout()"
+            style="
+            background:green;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:5px;
+            cursor:pointer;">
+
+            Proceed to Checkout
+
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>
+        © 2026 ShopEasy | Online Shopping System
+    </p>
+
+</footer>
+
+</body>
+</html>
